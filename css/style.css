@@ -1,0 +1,138 @@
+/* REGOLE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* REGOLE GENERALI */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #33475b;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.inlineblock li {
+  display: inline-block;
+}
+
+.fas.fa-search {
+  color: #31b6cb;
+}
+
+.button {
+  background-color: #fe775a;
+  border-radius: 3px;
+  padding: 9px 15px;
+  color: white;
+}
+
+/* REGOLE HEADER */
+header {
+  color: #33475b;
+}
+/* Regole Menu top */
+header .menutop {
+  background-color: #f4f9fd;
+  height: 80px;
+  border-bottom: 1px solid  black;
+}
+header .menutop .container {
+  height: 100%;
+}
+header .menutop .container .col {
+  width: 30%;
+  height: 100%;
+  padding-top: 2%;
+}
+header .menutop .container .col .inlineblock li {
+  padding: 8px 15px;
+  margin: 0 10px 0 0;
+}
+header .menutop .container .col.left {
+  float: left;
+}
+header .menutop .container .col.left ul li:first-child {
+  padding: 8px 15px 8px 0;
+}
+header .menutop .container .col.right {
+  float: right;
+  width: auto;
+}
+header .menutop .container .col.right ul li:nth-child(2) {
+  color: #fe775a;
+  border: 1px solid #fe775a;
+  border-radius: 3px;
+  background-color: #fafcfe;
+}
+
+/* Regole Menu bottom */
+header .menubottom {
+  background-color: white;
+  height: 80px;
+}
+header .menubottom .container {
+  height: 100%;
+}
+header .menubottom .container .col {
+  width: 30%;
+  height: 100%;
+  padding-top: 2%;
+}
+header .menubottom .container .col.left {
+  float: left;
+}
+header .menubottom .container .col.right {
+  float: right;
+  width: auto;
+}
+header .menubottom .container .col .inlineblock li {
+  padding: 0 20px 0 0;
+}
+/* Regole teaser */
+.teaser {
+  background-image: url(../img/jumbotron.png);
+  height: 700px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.teaser .container {
+  height: 100%;
+  position: relative;
+}
+.teaser .container .teasercontent {
+  height: 50%;
+  width: 45%;
+  position: absolute;
+  top: 10%;
+}
+.teaser .container .teasercontent * {
+  margin-bottom: 40px;
+}
+
+.teaser .container .teasercontent h1 {
+  font-size: 40px;
+}
+
+.teaser .teaserhr {
+  border-top: 2px solid #33475b;
+  border-bottom: 2px solid #33475b;
+  height: 80px;
+  background-color: #afebe4;
+}
+
+/* .teaser .container .teasercontent a {
+  display: block;
+} */
