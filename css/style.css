@@ -43,13 +43,8 @@ a {
   background-color: #dadee0;
   border-radius: 3px;
   padding: 9px 15px;
-  color: #32495b
+  color: #32495b;
 }
-
-/* img {
-  display: block;
-} */
-
 
 /* REGOLE HEADER */
 header {
@@ -137,13 +132,14 @@ header .menubottom .container .col .inlineblock li {
 .teaser .container .teasercontent h1 {
   font-size: 40px;
 }
-
-.teaser .teaserhr {
+/* Regole divisore */
+.teaserhr {
   border-top: 2px solid #33475b;
   border-bottom: 2px solid #33475b;
   height: 80px;
   background-color: #afebe4;
 }
+
 /* REGOLE MAIN */
 /* Regole sezione hub*/
 #hub {
@@ -151,27 +147,27 @@ header .menubottom .container .col .inlineblock li {
   padding-top: 2%;
   color: #33475b;
 }
-main #hub .container .row {
+/* Regole valide per piu sottosezioni */
+main #hub .container .row.one, main #hub .container .row.two {
   background-color: white;
   width: 100%;
   margin-bottom: 3%;
 }
-main #hub .container .row .col.one {
-  height: 100%;
+/* Regole Prima sottosezione */
+main #hub .container .row.one .col.one h2 {
+  margin-bottom: 2%;
+}
+main #hub .container .row.one {
+  background-color: #f4f9fd;
 }
 main #hub .container .row.one .col.one img {
   height: 200px;
   padding: 0 39%;
 }
-main #hub .container .row.one .col.one h2 {
+main #hub .container .row.one .col.one h2, main #hub .container .row.one .col.one p {
   text-align: center;
 }
-main #hub .container .row.one .col.one p {
-  text-align: center;
-}
-main #hub .container .row .col.one h2 {
-  margin-bottom: 2%;
-}
+/* Regole Seconda sottosezione */
 main #hub .container .row.two .col {
   padding: 40px 20px 20px 20px;
   float: left;
@@ -215,10 +211,15 @@ main #hub .container .row.two .col.two ul li i {
 main #hub .container .row.two .col.two ul:last-child {
   margin-bottom: 0%;
 }
+/* Regole Terza sottosezione */
+main #hub .container .row.three .col {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
 main #hub .container .row.three .col {
   height: 600px;
   width: 30%;
-  background-color: red;
   float: left;
   padding: 2%;
 }
@@ -266,6 +267,9 @@ main #community .container h2 {
 main #community .container h2, main #community .container h3, main #community .container p {
   text-align: center;
 }
+main #community .container h3 {
+  font-size: 24px;
+}
 main #community .container .row.one .block {
   float: left;
   width: 25%;
@@ -281,7 +285,7 @@ main #community .container .row.one .block:last-child {
 }
 main #community .container .row .block img {
   display: block;
-  height: 50px;
+  height: 33px;
   margin: 20px auto;
 }
 main #community .container .row.two .block {
@@ -298,29 +302,63 @@ main #reference {
   background: white;
   height: 600px;
   width: 100%;
+  color: #32495b;
 }
 main #reference .container > .row {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 main #reference .container .row .col.one {
   float: left;
   width: 30%;
 }
-main #reference .container .row .col.two {
+main #reference .container .row.one .col.two {
+  float: right;
+  width: 45%;
+}
+main #reference .container .row.two .col.two {
   float: right;
   width: 60%;
 }
+main #reference .container .row.one .col.one {
+  padding: 0 60px;
+}
+main #reference .container .row.one .col.two .row.one {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 main #reference .container .row.one .col.two img {
-  height: 20px;
+  padding-right: 20px;
+}
+main #reference .container .row.one .col.one p {
+  padding-top: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+}
+main #reference .container > .row.one {
+  padding-bottom: 30px;
+}
+main #reference .container .row.two .col.one * {
+  display: block;
+  margin-bottom: 20px;
+}
+main #reference .container .row.two .col.one a {
+  width: 200px;
+  text-align: center;
+}
+main #reference .container .row.one .col.two img {
+  width: 110px;
 }
 main #reference .container .row.two .col.two img {
   height: 300px;
-  padding-left: 60%;
+  padding-left: 50%;
 }
 /* REGOLE FOOTER */
 footer {
   background-color: #32495b;
   width: 100%;
+  color: white;
+}
+footer a {
   color: white;
 }
 footer .container .row .col {
@@ -358,4 +396,7 @@ footer .container .row.two .block.one {
 }
 footer .container .row.two .block.two {
   float: right;
+}
+footer .container .row.two .block.two ul li {
+  padding-right: 10px;
 }
