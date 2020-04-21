@@ -39,6 +39,18 @@ a {
   color: white;
 }
 
+.buttonwhite {
+  background-color: #dadee0;
+  border-radius: 3px;
+  padding: 9px 15px;
+  color: #32495b
+}
+
+/* img {
+  display: block;
+} */
+
+
 /* REGOLE HEADER */
 header {
   color: #33475b;
@@ -137,6 +149,7 @@ header .menubottom .container .col .inlineblock li {
 #hub {
   background-color: #f4f9fd;
   padding-top: 2%;
+  color: #33475b;
 }
 main #hub .container .row {
   background-color: white;
@@ -146,25 +159,203 @@ main #hub .container .row {
 main #hub .container .row .col.one {
   height: 100%;
 }
-main #hub .container .row .col.one img {
+main #hub .container .row.one .col.one img {
   height: 200px;
   padding: 0 39%;
 }
-main #hub .container .row .col.one h2, p {
+main #hub .container .row.one .col.one h2 {
+  text-align: center;
+}
+main #hub .container .row.one .col.one p {
   text-align: center;
 }
 main #hub .container .row .col.one h2 {
   margin-bottom: 2%;
 }
 main #hub .container .row.two .col {
+  padding: 40px 20px 20px 20px;
   float: left;
 }
 main #hub .container .row.two .col.one {
   width: 30%;
 }
-main #hub .container .row.two .col.two {
-  width: 70%;
+main #hub .container .row.two .col.one * {
+  display: block;
 }
-main #hub .container .row.two .col img {
+main #hub .container .row.two .col.two * {
+  margin-bottom: 4%;
+}
+
+main #hub .container .row.two .col.two h4 {
+  display: inline-block;
+}
+main #hub .container .row.two .col.two hr {
+  display: inline-block;
+  width: 60%;
+  margin: 1% 5%;
+}
+main #hub .container .row.two .col.two {
+  width: 60%;
+}
+main #hub .container .row.two .col.one img {
   height: 100px;
+  padding: 0 28%;
+}
+main #hub .container .row.two .col.one a {
+  text-align: center;
+  width: 45%;
+  margin: 30px auto;
+}
+main #hub .container .row.two .col.two ul li {
+  padding-right: 2%;
+}
+main #hub .container .row.two .col.two ul li i {
+  color: orange;
+}
+main #hub .container .row.two .col.two ul:last-child {
+  margin-bottom: 0%;
+}
+main #hub .container .row.three .col {
+  height: 600px;
+  width: 30%;
+  background-color: red;
+  float: left;
+  padding: 2%;
+}
+main #hub .container .row.three .col * {
+  text-align: center;
+  margin-bottom: 5%;
+}
+main #hub .container .row.three .col hr,a {
+  margin: 10% 0;
+}
+main #hub .container .row.three .col a {
+  width: 45%;
+  margin: 10% auto;
+}
+main #hub .container .row.three .col ul li {
+  margin-bottom: 1%;
+  text-align: left;
+}
+main #hub .container .row.three .col ul li i {
+  margin-bottom: 0;
+  color: orange;
+  padding-right: 2%;
+}
+
+main #hub .container .row.three .col.two {
+  margin: 0 5%;
+}
+main #hub .container .row.three .col img {
+  height: 100px;
+  margin: 20px auto;
+}
+main #hub .container .row.three .col img, main #hub .container .row.three .col a {
+  display: block;
+}
+/* Regole sezione community */
+main #community {
+  background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+  width: 100%;
+  color: white;
+}
+main #community .container h2 {
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+main #community .container h2, main #community .container h3, main #community .container p {
+  text-align: center;
+}
+main #community .container .row.one .block {
+  float: left;
+  width: 25%;
+  margin: 50px auto 0 auto;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main #community .container .row.one .block p {
+  padding-bottom: 3%;
+}
+main #community .container .row.one .block:last-child {
+  border-right: none;
+}
+main #community .container .row .block img {
+  display: block;
+  height: 50px;
+  margin: 20px auto;
+}
+main #community .container .row.two .block {
+  float: left;
+  width: 25%;
+  margin: 0 auto 80px auto;
+  border-right: 1px solid white;
+}
+main #community .container .row.two .block:last-child {
+  border-right: none;
+}
+/* Regole sezione reference */
+main #reference {
+  background: white;
+  height: 600px;
+  width: 100%;
+}
+main #reference .container > .row {
+  padding-top: 50px;
+}
+main #reference .container .row .col.one {
+  float: left;
+  width: 30%;
+}
+main #reference .container .row .col.two {
+  float: right;
+  width: 60%;
+}
+main #reference .container .row.one .col.two img {
+  height: 20px;
+}
+main #reference .container .row.two .col.two img {
+  height: 300px;
+  padding-left: 60%;
+}
+/* REGOLE FOOTER */
+footer {
+  background-color: #32495b;
+  width: 100%;
+  color: white;
+}
+footer .container .row .col {
+  height: 300px;
+  width: 23%;
+  float: left;
+  margin-right: 2.5%;
+  margin-top: 2%;
+}
+footer .container .row .col:last-child {
+  margin-right: 0;
+}
+footer .container .row.two ul {
+  padding-top: 10%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+footer .container .row.one ul {
+  padding-top: 10px;
+}
+footer .container .row.one ul li {
+  line-height: 40px;
+}
+footer .container .row.one ul li ul li {
+  padding-right: 20px;
+}
+footer .container .row.two {
+  padding-bottom: 30px;
+}
+footer .container .row.two hr {
+  margin: 5px 0 20px 0;
+}
+footer .container .row.two .block.one {
+  float: left;
+}
+footer .container .row.two .block.two {
+  float: right;
 }
