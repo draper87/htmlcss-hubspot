@@ -169,6 +169,9 @@ main #hub .container .row.two, main #hub .container .row.three .col {
 main #hub .container .row.two .col.one img, main #hub .container .row.three .col img {
   height: 100px;
 }
+main #hub .container .row hr {
+  border: 0.5px solid black;
+}
 /* Regole Prima sottosezione */
 main #hub .container .row.one .col.one h2 {
   margin-bottom: 2%;
