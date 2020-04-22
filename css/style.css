@@ -9,7 +9,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 a {
   text-decoration: none;
   color: #33475b;
@@ -18,7 +17,6 @@ a {
   width: 80%;
   margin: auto;
 }
-
 .clearfix::after {
   content: "";
   display: table;
@@ -27,18 +25,21 @@ a {
 .inlineblock li {
   display: inline-block;
 }
-
 .fas.fa-search {
   color: #31b6cb;
 }
-
 .button {
   background-color: #fe775a;
   border-radius: 3px;
   padding: 9px 15px;
   color: white;
+  border: 1px solid #fe775a;
 }
-
+.button:hover {
+  color: #ff7a59;
+  background-color: white;
+  border: 1px solid #ff7a59;
+}
 .buttonwhite {
   background-color: #dadee0;
   border-radius: 3px;
@@ -52,9 +53,16 @@ header {
 }
 /* Regole Menu top */
 header .menutop {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  margin-top: -80px;
   background-color: #f4f9fd;
   height: 80px;
   border-bottom: 1px solid  black;
+}
+header .container .col .inlineblock li a:hover {
+  color: #ff7a59;
 }
 header .menutop .container {
   height: 100%;
@@ -84,9 +92,9 @@ header .menutop .container .col.right ul li:nth-child(2) {
   border-radius: 3px;
   background-color: #fafcfe;
 }
-
 /* Regole Menu bottom */
 header .menubottom {
+  margin-top: 80px;
   background-color: white;
   height: 80px;
 }
@@ -128,7 +136,6 @@ header .menubottom .container .col .inlineblock li {
 .teaser .container .teasercontent * {
   margin-bottom: 40px;
 }
-
 .teaser .container .teasercontent h1 {
   font-size: 40px;
 }
@@ -148,10 +155,19 @@ header .menubottom .container .col .inlineblock li {
   color: #33475b;
 }
 /* Regole valide per piu sottosezioni */
-main #hub .container .row.one, main #hub .container .row.two {
+main #hub .container .row.one, main #hub .container .row.two, main #hub .container .row.three .col {
   background-color: white;
   width: 100%;
   margin-bottom: 3%;
+}
+main #hub .container .row.two .col, main #hub .container .row.three .col {
+  float: left;
+}
+main #hub .container .row.two, main #hub .container .row.three .col {
+  box-shadow: 0 0 11px #eaf0f6;
+}
+main #hub .container .row.two .col.one img, main #hub .container .row.three .col img {
+  height: 100px;
 }
 /* Regole Prima sottosezione */
 main #hub .container .row.one .col.one h2 {
@@ -159,6 +175,9 @@ main #hub .container .row.one .col.one h2 {
 }
 main #hub .container .row.one {
   background-color: #f4f9fd;
+}
+main #hub .container .row.one p {
+  padding: 0 80px;
 }
 main #hub .container .row.one .col.one img {
   height: 200px;
@@ -170,7 +189,6 @@ main #hub .container .row.one .col.one h2, main #hub .container .row.one .col.on
 /* Regole Seconda sottosezione */
 main #hub .container .row.two .col {
   padding: 40px 20px 20px 20px;
-  float: left;
 }
 main #hub .container .row.two .col.one {
   width: 30%;
@@ -181,12 +199,10 @@ main #hub .container .row.two .col.one * {
 main #hub .container .row.two .col.two * {
   margin-bottom: 4%;
 }
-
-main #hub .container .row.two .col.two h4 {
+main #hub .container .row.two .col.two h4, main #hub .container .row.two .col.two hr {
   display: inline-block;
 }
 main #hub .container .row.two .col.two hr {
-  display: inline-block;
   width: 60%;
   margin: 1% 5%;
 }
@@ -194,7 +210,6 @@ main #hub .container .row.two .col.two {
   width: 60%;
 }
 main #hub .container .row.two .col.one img {
-  height: 100px;
   padding: 0 28%;
 }
 main #hub .container .row.two .col.one a {
@@ -213,14 +228,8 @@ main #hub .container .row.two .col.two ul:last-child {
 }
 /* Regole Terza sottosezione */
 main #hub .container .row.three .col {
-  background-color: white;
-  width: 100%;
-  margin-bottom: 3%;
-}
-main #hub .container .row.three .col {
   height: 600px;
   width: 30%;
-  float: left;
   padding: 2%;
 }
 main #hub .container .row.three .col * {
@@ -243,18 +252,21 @@ main #hub .container .row.three .col ul li i {
   color: orange;
   padding-right: 2%;
 }
-
 main #hub .container .row.three .col.two {
   margin: 0 5%;
 }
 main #hub .container .row.three .col img {
-  height: 100px;
   margin: 20px auto;
 }
 main #hub .container .row.three .col img, main #hub .container .row.three .col a {
   display: block;
 }
 /* Regole sezione community */
+main #community .container .row .block {
+  float: left;
+  width: 25%;
+  border-right: 1px solid white;
+}
 main #community {
   background-image: linear-gradient(45deg,#00a4bd,#00bda5);
   width: 100%;
@@ -271,16 +283,13 @@ main #community .container h3 {
   font-size: 24px;
 }
 main #community .container .row.one .block {
-  float: left;
-  width: 25%;
   margin: 50px auto 0 auto;
-  border-right: 1px solid white;
   border-bottom: 1px solid white;
 }
 main #community .container .row.one .block p {
   padding-bottom: 3%;
 }
-main #community .container .row.one .block:last-child {
+main #community .container .row .block:last-child {
   border-right: none;
 }
 main #community .container .row .block img {
@@ -289,13 +298,7 @@ main #community .container .row .block img {
   margin: 20px auto;
 }
 main #community .container .row.two .block {
-  float: left;
-  width: 25%;
   margin: 0 auto 80px auto;
-  border-right: 1px solid white;
-}
-main #community .container .row.two .block:last-child {
-  border-right: none;
 }
 /* Regole sezione reference */
 main #reference {
@@ -311,13 +314,9 @@ main #reference .container .row .col.one {
   float: left;
   width: 30%;
 }
-main #reference .container .row.one .col.two {
+main #reference .container .row .col.two {
   float: right;
   width: 45%;
-}
-main #reference .container .row.two .col.two {
-  float: right;
-  width: 60%;
 }
 main #reference .container .row.one .col.one {
   padding: 0 60px;
@@ -336,6 +335,9 @@ main #reference .container .row.one .col.one p {
 }
 main #reference .container > .row.one {
   padding-bottom: 30px;
+}
+main #reference .container .row.two .col.two {
+  width: 60%;
 }
 main #reference .container .row.two .col.one * {
   display: block;
@@ -360,6 +362,9 @@ footer {
 }
 footer a {
   color: white;
+}
+footer a:hover {
+  color: #31b7cd;
 }
 footer .container .row .col {
   height: 300px;
